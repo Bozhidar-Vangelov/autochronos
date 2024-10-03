@@ -1,5 +1,6 @@
 import theme from "@/theme";
-import { Text, View } from "react-native";
+import { Link } from "expo-router";
+import { View } from "react-native";
 import { PaperProvider } from "react-native-paper";
 
 export default function Index() {
@@ -12,7 +13,8 @@ export default function Index() {
           alignItems: "center",
         }}
       >
-        <Text>AutoChronos</Text>
+        <Link href="/auth/login">Login</Link>
+        <Link href="/auth/signup">Signup</Link>
       </View>
     </PaperProvider>
   );
