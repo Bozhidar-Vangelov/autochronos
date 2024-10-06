@@ -2,7 +2,7 @@ import { useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { SignUpData } from "./types";
 import api from "@/services/api";
-import { useRouter } from "expo-router";
+import { Href, useRouter } from "expo-router";
 import { Button, Text, TextInput } from "react-native-paper";
 
 export default function SignUpPage() {
@@ -36,7 +36,7 @@ export default function SignUpPage() {
       alert(
         "Registration successful! Please check your email to confirm your account."
       );
-      router.push("/auth/login");
+      router.push("/auth/email-confirmation" as Href);
     } catch (error) {
       alert("Registration failed. Please try again.");
     } finally {
