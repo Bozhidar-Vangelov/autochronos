@@ -44,6 +44,12 @@ export default function RootLayout() {
             }}
           />
           <Stack.Screen
+            name="auth/email-confirmation"
+            options={{
+              headerTitle: "Email Confirmation",
+            }}
+          />
+          <Stack.Screen
             name="cars/index"
             options={{
               headerTitle: "Cars",
