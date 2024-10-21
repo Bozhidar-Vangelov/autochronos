@@ -29,7 +29,7 @@ export default function LoginPage() {
       });
       if (response.data.token) {
         login(response.data.token);
-        router.replace("/cars");
+        router.replace("/my-cars");
       }
     } catch (error) {
       alert("Login failed. Please check your credentials and try again.");

@@ -50,13 +50,13 @@ export default function RootLayout() {
             }}
           />
           <Stack.Screen
-            name="cars/index"
+            name="my-cars/index"
             options={{
-              headerTitle: "Cars",
+              headerTitle: "My Cars",
             }}
           />
           <Stack.Screen
-            name="cars/maintenance"
+            name="my-cars/maintenance"
             options={{
               headerTitle: "Maintenance",
             }}
